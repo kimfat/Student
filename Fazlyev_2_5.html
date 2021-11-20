@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>javasscript</title>
+		</head>
+	<body>
+		<script type="text/javascript">
+			var second_name = "веылыев";
+			var end = 0;
+			for (var i = 0; i < second_name.length; i++) {
+				if (end == 0 && second_name.charAt(i) != second_name.charAt(second_name.length - 1 - i)){
+					end = 1;
+					break;
+				}
+			}
+			if(end == 0){
+				alert(second_name + " это палиндром");
+			}else{
+				alert(second_name + " это не палиндром");
+			}
+		</script>
+	</body>
+</html>
